@@ -21,3 +21,8 @@ add.addEventListener("click", ()=>{
     c.innerHTML = cr++
 })
 
+//on decrease
+dec.addEventListener("click", ()=>{
+    c.innerHTML = cr--
+})
+
