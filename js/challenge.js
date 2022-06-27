@@ -26,3 +26,9 @@ dec.addEventListener("click", ()=>{
     c.innerHTML = cr--
 })
 
+//added an event for the hear button
+heart.addEventListener("click", r=>{
+    clicked.push(cr);
+    let li;
+
+}
