@@ -32,5 +32,20 @@ heart.addEventListener("click", r=>{
     let li;
     //looked for any current li with the the current number 
 let t = document.querySelector(`li[data-rep='${cr}']`);
+//if found, updated the li's html otherwise created a new one for the next number
+t ? t.innerHTML =  `${cr} has been clicked ${clicked.length} times` : (
+    li = document.createElement("li"),
+    li.dataset.rep=cr,
+    li.innerHTML = `${cr} has been clicked ${clicked.length} times`,
+    like.appendChild(li)
+    )
+    });
 
-}
+//comment form to create and append a comment
+f.addEventListener("submit", e=>{
+    e.preventDefault();
+    let dc = document.createElement("p");
+    dc.innerText= av.value;
+    d.appendChild(dc)
+    f.reset();
+})    
