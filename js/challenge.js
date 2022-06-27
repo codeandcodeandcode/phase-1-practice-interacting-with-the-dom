@@ -30,5 +30,7 @@ dec.addEventListener("click", ()=>{
 heart.addEventListener("click", r=>{
     clicked.push(cr);
     let li;
+    //looked for any current li with the the current number 
+let t = document.querySelector(`li[data-rep='${cr}']`);
 
 }
