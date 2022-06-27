@@ -11,3 +11,7 @@ let il = setInterval(() => {
     heart.dataset.curr=cr
  }, 1000);
  
+ // on pause or resume
+p.addEventListener("click", pc=>{
+    active ? (p.innerText="Resume", active = false) : (p.innerText = "Pause", active = true);
+})
