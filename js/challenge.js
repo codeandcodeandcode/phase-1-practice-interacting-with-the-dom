@@ -15,3 +15,9 @@ let il = setInterval(() => {
 p.addEventListener("click", pc=>{
     active ? (p.innerText="Resume", active = false) : (p.innerText = "Pause", active = true);
 })
+
+//an add
+add.addEventListener("click", ()=>{
+    c.innerHTML = cr++
+})
+
