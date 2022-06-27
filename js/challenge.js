@@ -3,3 +3,11 @@ let c = document.querySelector("#counter"), p=document.getElementById("pause"), 
 let f = document.querySelector("form"), av = document.querySelector("#comment-input");
 let d = document.querySelector(".comments");
 let cr = 0, cl = 1;
+
+// interval to update every time 
+let il = setInterval(() => {
+    active ? c.innerHTML = cr++ : null;
+    clicked = []
+    heart.dataset.curr=cr
+ }, 1000);
+ 
